@@ -14,7 +14,6 @@ h1{
     width: auto;   
     height: 100px;
 }
-
 #paper{
     width: auto;   
     height: 100px;
@@ -25,4 +24,6 @@ h1{
 }
 .choices{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
