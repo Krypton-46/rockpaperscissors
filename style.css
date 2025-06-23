@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    text-align: center;
+}
+
+h1{
+    background-color: #18206F;
+    color: white;
+    height: 60px;
+    line-height: 55px;
+}
+#rock{
+    width: auto;   
+    height: 100px;
+}
+
+#paper{
+    width: auto;   
+    height: 100px;
+}
+#scissors{
+    width: auto;   
+    height: 90px;
+}
+.choices{
+    display: flex;
+}
