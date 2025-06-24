@@ -74,7 +74,9 @@ h1{
   50%  { transform: scale(1.19); }
   100% { transform: scale(1); background-color: transparent; }
 }
-
+green {
+    background-color: #03c765;
+}
 .animate-highlight {
   animation: highlight 1s ease forwards;
 }
