@@ -27,12 +27,30 @@ const showWinner= (user,userChoice,compChoice) =>{
         result.innerText = `You win! ${userChoice} beats ${compChoice}`;
         let score = document.querySelector("#user-score");
         score.innerText = parseInt(score.innerText) + 1; 
+        if(userChoice === "rock"){
+            rock.play();
+        }
+        else if(userChoice === "paper"){
+            paper.play();
+        }
+        else{
+            scissors.play();
+        }
     }
     else{
         result.innerText = `AI wins! ${compChoice} beats ${userChoice}`;
         result.style.backgroundColor = "red";
         let score = document.querySelector("#ai-score");
         score.innerText = parseInt(score.innerText) + 1;
+        if(compChoice === "rock"){
+            rock.play();
+        }
+        else if(compChoice === "paper"){
+            paper.play();
+        }
+        else{
+            scissors.play();
+        }
     }
     animation();
 }
@@ -54,7 +72,10 @@ const playGame =(user)=>{
         showWinner(user_win,user,comp); 
     }
 }
-const click = new Audio("sounds/click.mp3");
+const click = new Audio("sounds/click.mp3"); 
+const rock = new Audio("sounds/rock.mp3");
+const paper = new Audio("sounds/paper.mp3");
+const scissors = new Audio("sounds/scissors.mp3");
 choices.forEach((choice) => {
     choice.addEventListener('click',()=>{
         let id = choice.getAttribute("id");
