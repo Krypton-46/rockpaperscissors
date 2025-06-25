@@ -54,9 +54,11 @@ const playGame =(user)=>{
         showWinner(user_win,user,comp); 
     }
 }
+const click = new Audio("sounds/click.mp3");
 choices.forEach((choice) => {
     choice.addEventListener('click',()=>{
         let id = choice.getAttribute("id");
+
         playGame(id);
     }); 
 })
