@@ -58,7 +58,7 @@ const click = new Audio("sounds/click.mp3");
 choices.forEach((choice) => {
     choice.addEventListener('click',()=>{
         let id = choice.getAttribute("id");
-
+        click.play();
         playGame(id);
     }); 
 })
